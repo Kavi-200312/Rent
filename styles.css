@@ -187,11 +187,11 @@ nav a{
 }
 .modern-features{
     display: flex;
-    padding-top: 80px;
+    padding-top: 3vh;
     margin-bottom: 90px;
 }
 .modern-features-img{
-    width: 40vw;
+    width: 45vw;
 }
 .modern-features-img img{
     width:85%
@@ -251,8 +251,12 @@ nav a{
         padding-top: 30px;
         order: 1;
     }
+    .modern-features-img{
+        width: 80vw;
+        transform: translatex(-50%);
+    }
     .modern-features-img img{
-        width: 140%;
+        width: 100%;
         margin-bottom: 20%;
     }
     .modern-features-content{
@@ -612,14 +616,20 @@ nav a{
 .frequently-asked-questions .questions div{
     display: flex;
     justify-content: space-between;
-    padding: 2.5% 0;
+    padding: 2% 0;
     border-bottom: 2px solid;
     width: 70%;
+}
+.click{
+    width: 70%;
+    color: var(--grey);
+    padding-top: 5px;
 }
 .frequently-asked-questions .questions div button{
     border: none;
     font-size: 27px;
     background-color: var(--white);
+    transform: translatey(-10px);
 }
 @media screen and (max-width:1000px) {
     .frequently-asked-questions{
