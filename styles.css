@@ -187,11 +187,11 @@ nav a{
 }
 .modern-features{
     display: flex;
-    padding-top: 80px;
+    padding-top: 3vh;
     margin-bottom: 90px;
 }
 .modern-features-img{
-    width: 40vw;
+    width: 45vw;
 }
 .modern-features-img img{
     width:85%
@@ -251,8 +251,12 @@ nav a{
         padding-top: 30px;
         order: 1;
     }
+    .modern-features-img{
+        width: 80vw;
+        transform: translatex(-50%);
+    }
     .modern-features-img img{
-        width: 140%;
+        width: 100%;
         margin-bottom: 20%;
     }
     .modern-features-content{
@@ -481,7 +485,7 @@ nav a{
     font-size: 60px;
     transition: transform 0.3s ease; 
 }
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
     .box h2 {
         margin: 10px 0; 
         transition: transform 0.3s ease; 
@@ -502,6 +506,37 @@ nav a{
     .box:hover p {
         opacity: 1; 
         transform: translateY(-30px); 
+    }
+} */
+@media screen and (min-width: 1000px) {
+    .box h2 {
+        transition: transform 0.3s ease; 
+    }
+    
+    .box p {
+        position: absolute;
+        bottom: 50px; 
+        opacity: 0; 
+        transform: translateY(45px);
+        transition: opacity 0.3s ease, transform 0.3s ease; 
+    }
+    .box:hover i, 
+    .box:hover h2 {
+        transform: translateY(-15px);
+    }
+
+    .box:hover p {
+        opacity: 1; 
+        transform: translateY(-10px); 
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .advantages-field {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box {
+        height: 300px; 
     }
 }
 
@@ -612,14 +647,20 @@ nav a{
 .frequently-asked-questions .questions div{
     display: flex;
     justify-content: space-between;
-    padding: 2.5% 0;
+    padding: 2% 0;
     border-bottom: 2px solid;
     width: 70%;
+}
+.click{
+    width: 70%;
+    color: var(--grey);
+    padding-top: 5px;
 }
 .frequently-asked-questions .questions div button{
     border: none;
     font-size: 27px;
     background-color: var(--white);
+    transform: translatey(-10px);
 }
 @media screen and (max-width:1000px) {
     .frequently-asked-questions{
